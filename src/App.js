@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Stock from './Components/Stock';
 
 function App() {
   return (
     <>
-    <h1 className='text-green-600'>Hi Adarsh</h1>
+   <Navbar/>
+   <Stock/>
     </>
   );
 }
