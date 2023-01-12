@@ -3,8 +3,11 @@ import { AiOutlineSearch} from 'react-icons/ai'
 
 
 
-function Navbar() {
+function Navbar({searchTerm, searchHandler}) {
 
+    // const getSearchTerm = (event)=>{
+    //     console.log(event.target.value)
+    // }
   
   return (
     <>
@@ -24,7 +27,7 @@ function Navbar() {
       <div className='bg-gray-200 md:ml-16 mt-2 rounded-full flex py-2 px-2 w-[300px] sm:w-[600px] lg:w-[500px]'>
         <AiOutlineSearch size={25} className='mt-2'/>
         <input type="text" className='bg-transparent p-2 focus:outline-none w-full' placeholder='Search for Stocks' 
-        />
+        onChange={searchHandler}/>
       </div> 
      
     </div>
